@@ -23,7 +23,7 @@ periodic intervals. A configuration might look something like this:
 ```edn
 {:duct.scheduler/simple
  {:jobs [{:interval 60   :run #ig/ref :example.job/every-minute}
-         {:interval 3600 :run #ig/ref :example.job/every-hour]}
+         {:interval 3600 :run #ig/ref :example.job/every-hour}]
 
  :example.job/every-minute {}
  :example.job/every-hour   {}}
